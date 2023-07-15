@@ -1,0 +1,143 @@
+//Variables
+@import "../../style/utilities/variables";
+@import "../../style/utilities/globalClasses";
+@import "../../style/utilities/breakPoints";
+
+
+$backgroundColor: #4854A5;
+$letterColor: white;
+
+a>svg{
+  height: 1.5em !important;
+  width: 1.5em !important;
+}
+
+.col-12>img{
+  height: 1.5em !important;
+  width: 1.5em !important;
+}
+
+#side-bar {
+
+  height: 100vh;
+  transition:
+    transform 128ms ease-out 256ms,
+    opacity 128ms ease-out 246ms;
+  transition: width 500ms;
+
+  .active {
+    background-color: $color-secondary;
+
+    .chevron-sub {
+      rotate: x 180deg;
+    }
+  }
+
+  .nav-link {
+    color: $color-tertiary;
+  }
+
+  .btn-collapse {
+    background-color: $color-ancent;
+    position: relative;
+    left: 55%;
+    height: 2em;
+    width: auto;
+    transition: rotate 256ms ease-in-out;
+    color: $alt-color-text;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+    z-index: 1;
+  }
+
+  .boton-acordion {
+    display: flex;
+    /* establish flex container */
+    flex-direction: row;
+    /* default value; can be omitted */
+    flex-wrap: nowrap;
+    /* default value; can be omitted */
+    justify-content: space-between;
+    /* switched from default (flex-start, see below) */
+
+    span {
+      display: inline-block;
+    }
+
+    .chevron-sub {
+      align-self: center;
+      //transition: rotate 500ms ease-in-out;
+    }
+  }
+
+  .button-effect:hover {
+    background-color: $color-hover;
+  }
+
+  .button-min-s {
+    width: 100%;
+    margin: auto 0;
+    // height: 16%;
+  }
+
+  .align-section-s {
+    position: relative;
+    left: -15%;
+  }
+
+  .align-section-s-2 {
+    position: relative;
+    top: 20%;
+    left: -7%;
+  }
+}
+
+
+.close-bar {
+  transform: translateX(-90%);
+  transition: transform 1s linear;
+
+}
+
+
+.rotate-180 {
+  rotate: y 180deg;
+}
+
+.list-group-item {
+  background-color: $backgroundColor  !important;
+  color: $letterColor  !important;
+  border: none !important;
+  text-align: left;
+
+}
+
+.sub-menu-min {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 500ms linear 300ms, translate 600ms linear;
+  display: grid;
+  grid-auto-rows: 3.5fr 1fr;
+  height: 100%;
+
+}
+
+
+.SubMenuSideBar {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 500ms linear 300ms, translate 600ms linear;
+}
+
+.sub-menu-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon-side-mini {
+  position: relative;
+  left: -25%;
+}
+
+.spacer {
+  height: 40vh;
+}

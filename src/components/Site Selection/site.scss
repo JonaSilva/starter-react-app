@@ -1,0 +1,287 @@
+@import "../../style/utilities/variables";
+@import "../../style/utilities/breakPoints";
+
+.site-card {
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+#dropdown-basic {
+  width: 100%;
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0 !important;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+}
+
+.drop-text {
+  font-size: $text-size1;
+}
+
+.drop-item {
+  font-size: $text-size1;
+}
+
+button.drop-text {
+
+  white-space: normal;
+
+}
+
+.dropdown-button {
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px !important;
+}
+
+.proyect-card {
+  background-color: $color-secondary;
+
+  box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+
+  .image {
+    filter: brightness(75%);
+
+  }
+
+  .overlay {
+    cursor: pointer;
+  }
+
+  .title {
+    text-align: left;
+    line-height: 2rem;
+    text-indent: 5%;
+    color: #Fff;
+    font-weight: bold;
+    position: relative;
+    //top: 70%;
+    width: 12vw;
+  }
+
+  @include dps768 {
+    .title {
+      top: 12vh;
+      left: -1.8vw;
+      font-size: 1em;
+    }
+
+    .dropdown-button {
+      span {
+        margin-right: 2vw;
+      }
+    }
+  }
+
+  @include dps868 {
+    .title {
+      top: 16vh;
+      left: -1.8vw;
+      font-size: 1.2em;
+    }
+
+    .dropdown-button {
+      span {
+        margin-right: 4vw;
+        margin-left: -2vw;
+      }
+    }
+  }
+
+  @include dps968 {
+    .title {
+      top: 12vh;
+      left: -1.8vw;
+      font-size: 1.2em;
+    }
+
+    .dropdown-button {
+      span {
+        margin-right: 4vw;
+        margin-left: -2vw;
+      }
+    }
+  }
+
+  @include dps1068 {
+    .title {
+      top: 15vh;
+      left: -1.8vw;
+      font-size: 1.2em;
+    }
+
+    .dropdown-button {
+      span {
+        margin-right: 3vw;
+        margin-left: -1vw;
+      }
+    }
+  }
+
+  @include dps1168 {
+    .title {
+      top: 17vh;
+      left: -1.5vw;
+      font-size: 1.2em;
+    }
+
+    .dropdown-button {
+      span {
+        margin-right: 3vw;
+        margin-left: -1vw;
+      }
+    }
+  }
+
+  @include dps1268 {
+    .title {
+      top: 19vh;
+      left: -1.2vw;
+      font-size: 1.2em;
+    }
+
+    .dropdown-button {
+      span {
+        margin-right: 4vw;
+      }
+    }
+  }
+
+  @include dps1368 {
+    .title {
+      top: 22vh;
+      left: -1.2vw;
+      font-size: 1.2em;
+    }
+
+    .drop-text {
+      font-size: 0.75em;
+    }
+
+    .dropdown-button {
+      span {
+        margin-right: 5vw;
+      }
+    }
+  }
+
+  @include dps1468 {
+    .title {
+      top: 22vh;
+      left: -1.2vw;
+      font-size: 1.2em;
+    }
+
+    .drop-text {
+      font-size: 0.75em;
+    }
+
+    .dropdown-button {
+      span {
+        margin-right: 6vw;
+      }
+    }
+  }
+
+  @include dps1568 {
+    .title {
+      top: 26vh;
+      left: -1.2vw;
+      font-size: 1.2em;
+    }
+
+    .drop-text {
+      font-size: 0.85em;
+    }
+
+    .dropdown-button {
+      span {
+        margin-right: 6vw;
+      }
+    }
+  }
+
+  @include dps1668 {
+    .title {
+      top: 23vh;
+      left: -1.2vw;
+      font-size: 1.3em;
+    }
+
+    .drop-text {
+      font-size: 0.85em;
+    }
+
+    .dropdown-button {
+      span {
+        margin-right: 6vw;
+      }
+    }
+  }
+
+  @include dps1768 {
+    .title {
+      top: 25vh;
+      left: -1vw;
+      font-size: 1.3em;
+    }
+
+    .drop-text {
+      font-size: 0.85em;
+    }
+
+    .dropdown-button {
+      span {
+        margin-right: 6vw;
+      }
+    }
+  }
+
+  @include dps1868 {
+    .title {
+      top: 27vh;
+      left: -1vw;
+      font-size: 1.3em;
+    }
+
+    .drop-text {
+      font-size: 0.85em;
+    }
+
+    .dropdown-button {
+      span {
+        margin-right: 6vw;
+      }
+    }
+  }
+
+  @include dps1968 {
+    .title {
+      top: 26vh;
+      left: -0.5vw;
+      font-size: 1.3em;
+    }
+
+    .drop-text {
+      font-size: 0.85em;
+    }
+
+    .dropdown-button {
+      span {
+        margin-right: 6vw;
+      }
+    }
+  }
+}

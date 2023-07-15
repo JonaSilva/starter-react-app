@@ -1,0 +1,84 @@
+@import "../utilities/globalClasses";
+
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    //grid-gap: 0px;
+    //grid-template-columns: 1fr 10fr;
+    //transition: all 1s;
+}
+
+.div1 {
+    flex: 80vw;
+    /* dynamic width */
+}
+
+.div2 {
+    flex: 20vw;
+    /* fixed width */
+}
+
+.test {
+    background-color: orange;
+}
+
+.minimize {
+
+    //grid-template-columns: 80px 1fr;
+
+    animation-name: collapse;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.maximaze {
+    //grid-template-columns: 0.2fr 1fr;
+    animation-name: expand;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/*
+@keyframes expand {
+    0% {
+        grid-template-columns: 80px 1fr;
+    }
+
+    100% {
+        grid-template-columns: 0.2fr 1fr;
+    }
+
+}
+*/
+
+.collapse {
+    animation-name: collapse;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes collapse {
+    0% {
+        grid-template-columns: 2fr 10fr;
+    }
+
+    100% {
+        grid-template-columns: 0.2fr 10fr;
+    }
+}
+
+.expanded {
+    animation-name: expand;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes expand {
+    0% {
+        grid-template-columns: 0.2fr 10fr;
+    }
+
+    100% {
+        grid-template-columns: 2fr 10fr;
+    }
+}

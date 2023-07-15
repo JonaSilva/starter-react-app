@@ -1,0 +1,79 @@
+//Variables
+@import "./variables";
+
+.background-primary {
+    background-color: $color-primary ;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.main-div {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-pointer-events {
+    pointer-events: none;
+}
+
+.pointer-events {
+
+    pointer-events: all;
+}
+
+.pointer-hand {
+    cursor: pointer;
+}
+
+.pointer-forbidden {
+    cursor: not-allowed;
+}
+
+.no-x-scroll {
+    overflow-x: hidden;
+}
+
+.input-color {
+    background-color: $overlay-color-tertiary;
+}
+
+.no-text-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.no-image-select {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.resize {
+    resize: both;
+    overflow: hidden;
+}
+
+.fade-in {
+    animation: fadeInAnimtaion 1s;
+}
+
+@keyframes fadeInAnimtaion {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

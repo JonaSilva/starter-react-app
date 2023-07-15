@@ -1,0 +1,829 @@
+@import "../../../style/utilities/breakPoints";
+
+.siteSelectionMini{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    margin-left: -0.4vw;
+
+    button{
+        width: 100%;
+        height: 100%;
+        border: none;
+        color: white;
+        
+        svg{
+            width: 28px;
+            height: 100%;
+            margin-left: -22%;
+        }
+    }
+}
+
+.lowerMenuMini{
+    button{
+        width: 100%;
+        background: none;
+        border: none;
+        color: white;
+        
+        svg{
+            width: 28px;
+            height: 100%;
+            margin-left: -0.5vw;
+        }
+    }
+}
+
+.groupInferiorButtons{
+    margin-left: -0.2vw;
+    button:nth-child(-n+2){
+    margin-bottom: 1vh;
+    }
+}
+
+.separatorInferiorMenu{
+    margin-bottom: 1em;
+}
+
+
+  @include dps768 {
+    .minimize-sidebar {
+      width: 6.6vw;
+
+      .siteSelectionMini{
+        margin-left: -0.6vw !important;
+      }
+      a{
+        width:2em;
+      }
+
+      hr{
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        width: 200%;
+        margin-left: -40%;
+      }
+
+      hr:first-of-type{
+        margin-top: 1vh !important;
+      }
+
+      .subMenuQuickChange{
+        margin-left: -28%;
+      }
+
+      .digitalTwinLogoMinimize{
+        height:60%;
+      }
+      .digitalTwinLogoMinimizeParent{
+        height:5%;
+      }
+    }
+      
+      
+
+      .SubMenuSideBar{
+        font-size: small;
+      }
+
+      a>svg{
+        height: 1.2em !important;
+        width: 1.2em !important;
+      }
+    
+  }
+
+  @include dps868 {
+    .minimize-sidebar {
+      width: 5.3vw;
+
+      .siteSelectionMini{
+        margin-left: -0.6vw !important;
+      }
+      a{
+        width:2em;
+      }
+
+      hr{
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        width: 200%;
+        margin-left: -40%;
+      }
+
+      hr:first-of-type{
+        margin-top: 1vh !important;
+      }
+
+      .subMenuQuickChange{
+        margin-left: -28%;
+      }
+
+      .digitalTwinLogoMinimize{
+        height:60%;
+      }
+      .digitalTwinLogoMinimizeParent{
+        height:5%;
+      }
+    }
+  
+      .btn-collapse{
+          left: 6vw !important;
+          width: 2vw !important;
+          height: 3vh !important;
+          margin-top: -2vh;
+      }
+      
+      .digitalTwinLogoMinimizeParent{
+        margin-top: -4%;
+        height: 6%;
+
+        img{
+          height: 2.8vh !important;
+          width: 2vw !important;
+          
+        }
+        .digitalTwin{
+          font-size: 0.9em !important;
+        }
+      }
+
+      .SubMenuSideBar{
+        font-size: small;
+      }
+
+      a>svg{
+        height: 1.2em !important;
+        width: 1.2em !important;
+      }
+    
+  }
+
+  @include dps968 {
+    .minimize-sidebar {
+      width: 4.8vw;
+
+      a{
+        width:2em;
+      }
+
+      hr{
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        width: 200%;
+        margin-left: -40%;
+      }
+
+      hr:first-of-type{
+        margin-top: 1vh !important;
+      }
+
+      .subMenuQuickChange{
+        margin-left: -28%;
+      }
+
+      .digitalTwinLogoMinimize{
+        height:60%;
+      }
+      .digitalTwinLogoMinimizeParent{
+        height:5%;
+      }
+    }
+   
+      .btn-collapse{
+          left: 6vw !important;
+          width: 2vw !important;
+          height: 3vh !important;
+          margin-top: -2vh;
+      }
+      
+      .digitalTwinLogoMinimizeParent{
+        margin-top: -4%;
+        height: 6%;
+
+        img{
+          height: 2.8vh !important;
+          width: 2vw !important;
+          
+        }
+        .digitalTwin{
+          font-size: 0.9em !important;
+        }
+      }
+
+      .SubMenuSideBar{
+        font-size: small;
+      }
+
+      a>svg{
+        height: 1.2em !important;
+        width: 1.2em !important;
+      }
+    
+  }
+
+  @include dps1068 {
+    .minimize-sidebar {
+      width: 4.3vw;
+
+      a{
+        width:2em;
+      }
+
+      hr{
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        width: 200%;
+        margin-left: -40%;
+      }
+
+      .subMenuQuickChange{
+        margin-left: -28%;
+      }
+
+      .digitalTwinLogoMinimize{
+        height:60%;
+      }
+      .digitalTwinLogoMinimizeParent{
+        height:5%;
+      }
+    }
+      .btn-collapse{
+          left: 60% !important;
+          height: 1.6em !important;
+      }
+      
+      .digitalTwinLogoMinimizeParent{
+        margin-top: -4%;
+        height: 6%;
+
+        img{
+          height: 2.8vh !important;
+          width: 2vw !important;
+          
+        }
+        .digitalTwin{
+          font-size: 1.1em !important;
+        }
+      }
+
+      .SubMenuSideBar{
+        font-size: small;
+      }
+
+      a>svg{
+        height: 1.2em !important;
+        width: 1.2em !important;
+      }
+    
+  }
+
+  @include dps1168 {
+    .minimize-sidebar {
+      width: 3.9vw;
+
+      a{
+        width:2em;
+      }
+
+      hr{
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        width: 200%;
+        margin-left: -40%;
+      }
+
+      .subMenuQuickChange{
+        margin-left: -28%;
+      }
+
+      .digitalTwinLogoMinimize{
+        height:60%;
+      }
+      .digitalTwinLogoMinimizeParent{
+        height:5%;
+      }
+    }
+    
+      .btn-collapse{
+          left: 60% !important;
+          height: 1.6em !important;
+      }
+      
+      .digitalTwinLogoMinimizeParent{
+        margin-top: -4%;
+        height: 6%;
+
+        img{
+          height: 2.8vh !important;
+          width: 2vw !important;
+          
+        }
+        .digitalTwin{
+          font-size: 1.2em !important;
+        }
+      }
+
+      .SubMenuSideBar{
+        font-size: small;
+      }
+
+      a>svg{
+        height: 1.2em !important;
+        width: 1.2em !important;
+      }
+    }
+  
+
+  @include dps1268 {
+    .minimize-sidebar {
+      width: 3.8vw;
+
+      a{
+        width:2em;
+      }
+
+      hr{
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        width: 200%;
+        margin-left: -40%;
+      }
+
+      .subMenuQuickChange{
+        margin-left: -28%;
+      }
+
+      .digitalTwinLogoMinimize{
+        height:60%;
+      }
+      .digitalTwinLogoMinimizeParent{
+        height:5%;
+      }
+    }
+   
+      .btn-collapse{
+          left: 60% !important;
+          height: 1.6em !important;
+      }
+      
+      .digitalTwinLogoMinimizeParent{
+        margin-top: -4%;
+        height: 6%;
+
+        img{
+          width: 32px !important;
+          height: 23px !important;
+        }
+        .digitalTwin{
+          font-size: medium !important;
+        }
+      }
+
+      .SubMenuSideBar{
+        font-size: small;
+      }
+
+      a>svg{
+        height: 1.2em !important;
+        width: 1.2em !important;
+      }
+    }
+  
+
+  @include dps1368 {
+    .minimize-sidebar {
+      width: 5vw;
+
+      a{
+        width:2em;
+      }
+
+      hr{
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        width: 200%;
+        margin-left: -40%;
+      }
+
+      .subMenuQuickChange{
+        margin-left: -28%;
+      }
+
+      .digitalTwinLogoMinimize{
+        height:60%;
+      }
+      .digitalTwinLogoMinimizeParent{
+        height:5%;
+      }
+    }
+    
+      .btn-collapse{
+          left: 60% !important;
+          height: 1.6em !important;
+      }
+      
+      .digitalTwinLogoMinimizeParent{
+        margin-top: -4%;
+        height: 6%;
+
+        img{
+          width: 32px !important;
+          height: 23px !important;
+        }
+        .digitalTwin{
+          font-size: medium !important;
+        }
+      }
+
+      .SubMenuSideBar{
+        font-size: small;
+      }
+
+      a>svg{
+        height: 1.2em !important;
+        width: 1.2em !important;
+      }
+    }
+  
+
+  @include dps1468 {
+    .minimize-sidebar {
+      width: 3.3vw;
+  
+      a{
+        width:2em;
+      }
+  
+      hr{
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        width: 200%;
+        margin-left: -40%;
+      }
+  
+      .subMenuQuickChange{
+        margin-left: -28%;
+      }
+  
+      .digitalTwinLogoMinimize{
+        height:60%;
+      }
+      .digitalTwinLogoMinimizeParent{
+        height:3%;
+      }
+    }
+    
+      .btn-collapse{
+          left: 60% !important;
+          height: 1.6em !important;
+      }
+      
+      .digitalTwinLogoMinimizeParent{
+        margin-top: -4%;
+        height: 6%;
+  
+        img{
+          width: 27px !important;
+          height: 23px !important;
+          margin-left: -0.2vw;
+        }
+        .digitalTwin{
+          font-size: medium !important;
+        }
+      }
+  
+      .SubMenuSideBar{
+        font-size: small;
+      }
+  
+      a>svg{
+        height: 1.2em !important;
+        width: 1.2em !important;
+      }
+    }
+  
+  @include dps1568 {
+    .minimize-sidebar {
+      width: 3.3vw;
+  
+      a{
+        width:2em;
+      }
+  
+      hr{
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        width: 200%;
+        margin-left: -40%;
+      }
+  
+      .subMenuQuickChange{
+        margin-left: -28%;
+      }
+  
+      .digitalTwinLogoMinimize{
+        height:5vh;
+      }
+      .digitalTwinLogoMinimizeParent{
+        height:5%;
+      }
+    }
+    
+    .btn-collapse{
+      left: 60% !important;
+      height: 1.6em !important;
+    }
+  
+    .digitalTwinLogoMinimizeParent{
+      margin-top: -4%;
+      height: 6%;
+  
+      img{
+        width: 30px !important;
+        height: 22px !important;
+      }
+      .digitalTwin{
+        font-size: medium !important;
+      }
+    }
+  
+    .SubMenuSideBar{
+      font-size: small;
+    }
+  
+    a>svg{
+      height: 1.2em !important;
+      width: 1.2em !important;
+    }
+  }
+  
+  @include dps1668 {
+    .minimize-sidebar {
+      width: 2.8vw;
+  
+      a{
+        width:2em;
+      }
+  
+      hr{
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        width: 2vw;
+        margin-left: -0.5vw;
+      }
+  
+      .subMenuQuickChange{
+        margin-left: -28%;
+      }
+  
+      .digitalTwinLogoMinimize{
+        height:5vh;
+        width: 2.1vw;
+        margin-left: -0.5vw;
+      }
+      .digitalTwinLogoMinimizeParent{
+        height:5%;
+      }
+    }
+    
+    .btn-collapse{
+      left: 60% !important;
+      height: 1.6em !important;
+    }
+  
+    .digitalTwinLogoMinimizeParent{
+      margin-top: -4%;
+      height: 6%;
+  
+      img{
+        width: 30px !important;
+        height: 22px !important;
+      }
+      .digitalTwin{
+        font-size: medium !important;
+      }
+    }
+  
+    .SubMenuSideBar{
+      font-size: small;
+    }
+  
+    a>svg{
+      height: 1.2em !important;
+      width: 1.2em !important;
+    }
+  }
+  
+  @include dps1768 {
+    .minimize-sidebar {
+      width: 2.9vw;
+  
+      a{
+        width:2em;
+      }
+  
+      hr{
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        width: 2.2vw;
+        margin-left: -0.45vw;
+        
+      }
+  
+      .subMenuQuickChange{
+        margin-left: -28%;
+      }
+  
+      .digitalTwinLogoMinimize{
+        height:5vh;
+        width: 2.1vw;
+        margin-left: -0.5vw;
+      }
+      .digitalTwinLogoMinimizeParent{
+        height:5%;
+      }
+    }
+    
+    .btn-collapse{
+      left: 60% !important;
+      height: 1.6em !important;
+    }
+  
+    .digitalTwinLogoMinimizeParent{
+      margin-top: -4%;
+      height: 6%;
+  
+      img{
+        width: 30px !important;
+        height: 22px !important;
+      }
+      .digitalTwin{
+        font-size: medium !important;
+      }
+    }
+  
+    .SubMenuSideBar{
+      font-size: small;
+    }
+  
+    a>svg{
+      height: 1.2em !important;
+      width: 1.2em !important;
+    }
+  }
+  
+  @include dps1868 {
+    .minimize-sidebar {
+      width: 2.8vw;
+  
+      a{
+        width:2em;
+      }
+  
+      hr{
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        width: 2vw;
+        margin-left: -0.5vw;
+      }
+  
+      .subMenuQuickChange{
+        margin-left: -28%;
+      }
+  
+      .digitalTwinLogoMinimize{
+        height:5vh;
+        width: 2.1vw;
+        margin-left: -0.5vw;
+      }
+      .digitalTwinLogoMinimizeParent{
+        height:5%;
+      }
+    }
+    
+    .btn-collapse{
+      left: 60% !important;
+      height: 1.6em !important;
+    }
+  
+    .digitalTwinLogoMinimizeParent{
+      margin-top: -4%;
+      height: 6%;
+  
+      img{
+        width: 30px !important;
+        height: 22px !important;
+      }
+      .digitalTwin{
+        font-size: medium !important;
+      }
+    }
+  
+    .SubMenuSideBar{
+      font-size: small;
+    }
+  
+    a>svg{
+      height: 1.2em !important;
+      width: 1.2em !important;
+    }
+  }
+
+  @include dps1968 {
+    .minimize-sidebar {
+      width: 2.6vw;
+  
+      a{
+        width:2em;
+      }
+  
+      hr{
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        width: 2vw;
+        margin-left: -0.5vw;
+      }
+  
+      .subMenuQuickChange{
+        margin-left: -28%;
+      }
+  
+      .digitalTwinLogoMinimize{
+        height:5vh;
+        width: 2.1vw;
+        margin-left: -0.5vw;
+      }
+      .digitalTwinLogoMinimizeParent{
+        height:5%;
+      }
+    }
+    
+    
+    .btn-collapse{
+      left: 60% !important;
+      height: 1.6em !important;
+    }
+  
+    .digitalTwinLogoMinimizeParent{
+      margin-top: -4%;
+      height: 6%;
+  
+      img{
+        width: 30px !important;
+        height: 22px !important;
+      }
+      .digitalTwin{
+        font-size: medium !important;
+      }
+    }
+  
+    .SubMenuSideBar{
+      font-size: small;
+    }
+  
+    a>svg{
+      height: 1.2em !important;
+      width: 1.2em !important;
+    }
+  }

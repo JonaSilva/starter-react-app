@@ -1,0 +1,96 @@
+@import "../../../src/style/utilities/variables";
+@import "../../../src/style/utilities/breakPoints";
+@import "../../../src/style/utilities/globalClasses";
+@import "../../../src/style/utilities/fonts";
+
+.label-matterport {
+  color: #fff;
+  font-size: 0.8rem;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background: $overlay-color-primary;
+  background-color: $overlay-color-primary;
+  border-radius: 60px;
+  padding: 1% 0.5% 0.5% 0.5%;
+}
+
+.label-line-matterport {
+  pointer-events: none;
+}
+
+.label-render-matterport {
+  pointer-events: none;
+  z-index: 0;
+}
+
+.label-render-matterport-css3 {
+  pointer-events: none;
+  z-index: 0;
+  perspective: 1000px !important;
+}
+
+.label-matterport-measurements {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.gaugeSensor-matterport {
+  pointer-events: none;
+  width: 8.5px;
+  height: 0px;
+}
+
+.gaugeSensor-matterport::before {
+  content: "";
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  background-color: #daf3ff;
+  border-radius: 50%;
+  display: block;
+  top: -2px;
+  bottom: 8px;
+  left: 15px;
+  z-index: -1;
+
+}
+
+//gaugeSensor-matterport
+#label-render-matterport {
+  pointer-events: none;
+
+
+}
+
+.canvas-sensor {
+  //background: white;
+  width: 150px;
+  height: 100px;
+  pointer-events: none;
+}
+
+.canvas-sensor::before {
+  content: "<div><div>";
+  display: block;
+  width: 79px;
+  height: 100px;
+  z-index: 22;
+  position: relative;
+  border-radius: 51%;
+}
+
+.preview-textfield {
+  background-color: white;
+  width: 60px;
+  height: 50%;
+  display: block;
+  position: relative;
+  color: black;
+  left: 46px;
+  top: -20px;
+  bottom: 26px;
+  font-size: 1.1rem;
+  pointer-events: none;
+}

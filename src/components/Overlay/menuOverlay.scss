@@ -1,0 +1,858 @@
+@import "../../../src/style/utilities/variables";
+@import "../../../src/style/utilities/breakPoints";
+@import "../../../src/style/utilities/globalClasses";
+@import "../../../src/style/utilities/fonts";
+
+.parent-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.bottom-controls {
+    display: none;
+}
+
+.overlayMenu {
+    z-index: 1;
+}
+
+
+
+
+.item-container-ov {
+    overflow-y: scroll;
+    height: 100%;
+    background-color: $overlay-color-primary;
+    font-size: 0.8rem;
+
+}
+
+.item-ov {
+    background-color: $overlay-color-primary;
+
+}
+
+.item-ov-active {
+    background-color: $overlay-color-secundary;
+}
+
+
+.section-right-o {
+
+    width: 60%;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+
+
+.section-left-o {
+
+    display: flex;
+
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    width: 40%;
+
+    z-index: 2;
+}
+
+.upper {
+    flex-grow: 1;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+
+    z-index: 3;
+
+    .miniMapParent {
+        flex-grow: 1;
+    }
+
+    .miniMapCloseOpenParent {
+        flex-grow: 0;
+    }
+}
+
+.lower {
+    flex-grow: 1;
+    align-self: auto;
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    align-content: flex-end;
+
+    .buttonMeasurement {
+        flex-grow: 0;
+    }
+
+    .buttonSensors {
+        flex-grow: 0;
+    }
+
+    /*
+    .icon-button-container:hover::before {
+        content: "This is a fancy orange box.";
+        background-color: #FFBA10;
+        border-color: black;
+        border-style: dotted;
+
+    }
+    */
+    /*
+    .icon-button-container {
+        background-color: #FFBA10;
+    }
+*/
+    .buttonModels {
+        flex-grow: 0;
+        align-self: auto;
+    }
+
+    .icon-button-security {
+        height: 32px;
+        width: 32px;
+        color: black;
+    }
+
+    .icon-button-sensors {
+        height: 32px;
+        width: 32px;
+        position: relative;
+        color: black;
+    }
+
+    .icon-button-mesure {
+        height: 32px;
+        width: 32px;
+        position: relative;
+        color: black;
+    }
+
+    .icon-button-disabled {
+
+        opacity: 0.3;
+        color: $disabled;
+    }
+}
+
+.hierarchy-minimize {
+
+    background-color: $overlay-color-primary;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+    flex-grow: 0;
+}
+
+.hierarchy-tree {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    height: 80vh;
+    width: 20vw;
+    resize: both;
+    overflow: hidden;
+    background: #545f60;
+}
+
+.hierarchy-info {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 1vh;
+
+    .marginHierarchyComponent {
+        flex-grow: 0;
+    }
+}
+
+
+.mini-map {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    z-index: 2;
+    height: 40vh;
+    width: 40vw;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+}
+
+
+
+.active-ov {
+    background-color: $overlay-color-secundary;
+}
+
+.tree-node {
+    background-color: $overlay-color-primary;
+    color: $overlay-text-primary;
+}
+
+
+.node-title {
+    text-overflow: inherit;
+    overflow: hidden;
+    width: 150px;
+    height: 20px;
+    text-align: left;
+}
+
+.node-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-content: stretch;
+    margin-left: 4.5%;
+
+}
+
+.node-parent {
+    margin-left: 0%;
+}
+
+.node-site {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+
+}
+
+.node-site:hover:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 15%;
+
+    pointer-events: none;
+    top: 0%;
+}
+
+.node-active-site:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 15%;
+
+    pointer-events: none;
+    top: 0%;
+}
+
+.node-Room {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+
+}
+
+.node-Room:hover:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 9%;
+
+    pointer-events: none;
+    top: 0%;
+}
+
+.node-active-Room:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 9%;
+
+    pointer-events: none;
+    top: 0%;
+}
+
+.node-Instrument {
+    width: 85%;
+    position: relative;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+
+}
+
+.node-Instrument:hover:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 76%;
+    left: 5%;
+
+    pointer-events: none;
+    top: 14%;
+}
+
+.node-Equipment {
+    width: 85%;
+    position: relative;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+
+}
+
+.node-Equipment:hover:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 76%;
+    left: 5%;
+
+    pointer-events: none;
+    top: 14%;
+}
+
+.node-active-Equipment-:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 15%;
+
+    pointer-events: none;
+    top: 0%;
+}
+
+
+.node-HSE_Equipment {
+    width: 85%;
+    position: relative;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+
+}
+
+.node-HSE_Equipment:hover:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 76%;
+    left: 5%;
+
+    pointer-events: none;
+    top: 14%;
+}
+
+.node-active-HSE_Equipment-:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 10%;
+
+    pointer-events: none;
+    top: 10%;
+}
+
+.node-childHSE_Equipament {
+    width: 85%;
+    position: relative;
+    left: 4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+
+}
+
+.node-childHSE_Equipament:hover:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 10%;
+
+    pointer-events: none;
+    top: 10%;
+}
+
+.node-active-childHSE_Equipament:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 10%;
+
+    pointer-events: none;
+    top: 10%;
+}
+
+.node-childEquipament {
+    width: 85%;
+    position: relative;
+    left: 4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+
+}
+
+.node-childEquipament:hover:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 10%;
+
+    pointer-events: none;
+    top: 10%;
+}
+
+.node-active-childEquipament:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 10%;
+
+    pointer-events: none;
+    top: 10%;
+}
+
+
+
+
+.node-Subequipment {
+    width: 85%;
+    position: relative;
+    left: 8%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+
+}
+
+.node-Subequipment:hover:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 10%;
+
+    pointer-events: none;
+    top: 10%;
+}
+
+.node-active-Subequipment:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 10%;
+
+    pointer-events: none;
+    top: 10%;
+}
+
+.node-childInstrument {
+    width: 85%;
+    position: relative;
+    left: 4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+
+}
+
+.node-childInstrument:hover:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 10%;
+
+    pointer-events: none;
+    top: 10%;
+}
+
+.node-active-childInstrument:after {
+    position: absolute;
+    content: "";
+    background-color: $overlay-color-secundary;
+    width: 80%;
+    height: 75%;
+    left: 15%;
+
+    pointer-events: none;
+    top: 0%;
+}
+
+
+//expand node
+.chevron-down {
+    rotate: z 90deg;
+}
+
+//Tabs overlayy style tabs
+ul.overlay-tabs {
+    margin: 0 auto;
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+}
+
+ul.overlay-tabs li {
+    float: left;
+}
+
+.li-details {
+    width: 50%;
+}
+
+.document-overlay-tabs .li-details {
+    width: auto;
+    border-bottom: 1px gray;
+    border-bottom-style: solid;
+
+    div {
+        a {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: baseline;
+            align-content: stretch;
+
+            span {
+                padding-left: 10px;
+            }
+
+            .overlay-tab {
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+
+ul.overlay-tabs li a {
+    position: relative;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: $overlay-accent-color;
+    margin-top: 40px;
+    padding: 10px 0 0 0;
+    -webkit-box-shadow: 8px 12px 25px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 8px 12px 25px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 8px 12px 25px 2px rgba(0, 0, 0, 0.4);
+    border: 0px solid #000000;
+    -webkit-transition: padding 0.2s ease, margin 0.2s ease;
+    -moz-transition: padding 0.2s ease, margin 0.2s ease;
+    -o-transition: padding 0.2s ease, margin 0.2s ease;
+    -ms-transition: padding 0.2s ease, margin 0.2s ease;
+    transition: padding 0.2s ease, margin 0.2s ease;
+
+    span {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100px;
+        text-overflow: ellipsis;
+        font-size: $text-size1;
+    }
+}
+
+.overlay-tabs li:first-child a {
+    z-index: 3;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    border-top-left-radius: 8px;
+}
+
+.overlay-tabs li:nth-child(2) a {
+    z-index: 2;
+}
+
+.overlay-tabs li:last-child a {
+    z-index: 1;
+    -webkit-box-shadow: 2px 8px 25px -2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 8px 25px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 8px 25px -2px rgba(0, 0, 0, 0.3);
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-right-radius: 8px;
+}
+
+ul.overlay-tabs li a:hover {
+    margin: 35px 0 0 0;
+    padding: 10px 0 5px 0;
+}
+
+ul.overlay-tabs li a.overlay-tab-active {
+
+    background: $overlay-color-secundary;
+    color: $overlay-accent-color;
+    /*color: #ff6831;*/
+    z-index: 4;
+    outline: none;
+    margin: 30px 0 0 0;
+    padding: 10px 0 10px 0;
+}
+
+.overlay-group:before,
+.overlay-group:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.overlay-group:after {
+    clear: both;
+}
+
+.overlay-content {
+    margin: 0 auto;
+    background: $overlay-color-primary;
+    -webkit-box-shadow: 2px 8px 25px -2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 8px 25px -2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 8px 25px -2px rgba(0, 0, 0, 0.3);
+    -webkit-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        padding: 30px 40px;
+        color: #ffffff;
+        line-height: 26px;
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+//hierarchy d3
+.d3-content {
+    width: 170%;
+    height: 495%;
+    -webkit-box-shadow: 2px 8px 25px -2px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 2px 8px 25px -2px rgba(0, 0, 0, 0);
+    box-shadow: 2px 8px 25px -2px rgba(0, 0, 0, 0);
+    -webkit-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: white;
+}
+
+.node {
+    width: 100%;
+}
+
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1px;
+}
+
+.node text {
+    color: black;
+    font: 0.7rem sans-serif;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1px;
+}
+
+.hierarchy-container {
+    height: 100%;
+    width: 100%;
+}
+
+.ovelay-trigger {
+    /*added*/
+    background-color: orange;
+    max-height: 20%;
+    height: 20%;
+    max-width: 20%;
+    width: 20%;
+}
+
+.overlay-tooltip {
+
+    display: flex;
+    /*added*/
+    flex-direction: column;
+
+}
+
+
+@include dps768 {
+    .miniMapParent {
+        margin-left: -22.5vw;
+    }
+}
+
+@include dps868 {
+    .miniMapParent {
+        margin-left: -14.5vw;
+    }
+}
+
+@include dps968 {
+    .miniMapParent {
+        margin-left: -9.5vw;
+    }
+}
+
+@include dps1068 {
+    .miniMapParent {
+        margin-left: -5.5vw;
+    }
+}
+
+@include dps1168 {
+    .miniMapParent {
+        margin-left: -1.5vw;
+    }
+}
+
+@include dps1268 {
+    .miniMapParent {
+        margin-left: 1.5vw;
+    }
+}
+
+@include dps1368 {
+    .miniMapParent {
+        margin-left: 3.5vw;
+    }
+}
+
+@include dps1468 {
+    .miniMapParent {
+        margin-left: 6.5vw;
+    }
+}
+
+@include dps1568 {
+    .miniMapParent {
+        margin-left: 8.5vw;
+    }
+}
+
+@include dps1668 {
+    .miniMapParent {
+        margin-left: 10.5vw;
+    }
+}
+
+@include dps1768 {
+    .miniMapParent {
+        margin-left: 12.5vw;
+    }
+}
+
+@include dps1868 {
+    .miniMapParent {
+        margin-left: 13.5vw;
+    }
+}
+
+@include dps1968 {
+    .miniMapParent {
+        margin-left: 14.5vw;
+    }
+}
