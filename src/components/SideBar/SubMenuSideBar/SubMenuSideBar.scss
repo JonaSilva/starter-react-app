@@ -1,0 +1,1264 @@
+@import "../../../style/utilities/breakPoints";
+
+
+.inLineFlex{
+    display: inline-flex !important;
+    width: 32px;
+    height: 32px;
+}
+
+.inlineBlock{
+    display: inline-block !important;
+}
+
+.text{
+    align-content: flex-start;
+    text-align: left;
+    margin-left:2%;
+    margin-right: -14%;
+}
+
+.textHelp{
+    align-content: flex-start;
+    text-align: left;
+    margin-left: 10%;
+}
+
+
+.flex-parent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.listGroup{
+    display: inline-flex;
+    margin-left: -22%;
+}
+
+.siteSelectionNormal{
+    display: flex;
+    button{
+        border: none;
+        color: white; 
+        /*svg{
+            width: 20px;
+            margin-left: -8%;
+            margin-top: -15%;
+        }*/
+    }
+}
+
+@include dps768  {
+    .SubMenuSideBar{
+        font-size: 0.8em;
+    }
+    
+    .expand-sidebar{
+        width:17vw;
+
+        .digitalTwinLogoMinimizeParent{
+            margin-top: -4%;
+            height: 6%;
+    
+            img{
+              height: 2vh !important;
+              width: 2vw !important;
+              
+            }
+            .digitalTwin{
+              font-size: 1em !important;
+            }
+          }
+
+          
+        .btn-collapse{
+            left: 8.5vw !important;
+            width: 2vw !important;
+            height: 3vh !important;
+            margin-top: -2vh;
+        }
+      }
+    
+    .siteSelectionButton{
+        height:60% !important;
+        a{
+            width: 100% !important;
+            padding:0px;
+        }
+    }
+
+    .Accordion{
+        margin-left:-10% !important;
+        svg{
+            width: 2vw !important;
+            height: 2.3vh !important;
+        }
+    }
+
+    .nav-item>a{
+        height:50px !important;
+    }
+
+    .inLineFlex{
+        display: inline-flex !important;
+        width: 14.5px;
+        height: 32px;
+    }
+
+    .nameLong{
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 6vw !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+        margin-top: -0.2vh;
+        margin-left: -0.5vw;
+    }
+
+    .nameShort{
+        align-content: flex-start;
+        text-align: left;
+        margin-left:6%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameSiteSelection{
+        
+        flex-grow:1;
+
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        height: 3vh;
+        margin-top: 0.4vh;
+        font-size: 0.9em;
+        margin-left: 0.5vw;
+
+    }
+    .boton-acordion{
+        padding-left: 0.76vw !important;
+        padding-right: 0vw !important;
+    }
+    .interiorButton{
+        display: flex;
+        justify-content: flex-start;  
+        /* flex-flow: row nowrap; */ 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: flex-start;
+        width: 12vw;
+        height: 2.8vh;
+        .iconSiteSelection{
+            flex-grow:0;
+            width: 1.5vw;
+            height: 2vh;
+            
+        }
+    }
+
+    .text{
+        margin-top:-0.4vh;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .arrows{
+        margin-top: 0vh !important;
+        height: 1em !important;
+        width: 1em !important;
+    }
+}
+
+@include dps868  {
+    .SubMenuSideBar{
+        font-size: 0.8em;
+    }
+    
+    .expand-sidebar{
+        width:13vw;
+      }
+    
+    .siteSelectionButton{
+        height:60% !important;
+        a{
+            width: 100% !important;
+            padding:0px;
+        }
+    }
+
+    .Accordion{
+        margin-left:-10% !important;
+        svg{
+            width: 2vw !important;
+            height: 2.3vh !important;
+        }
+    }
+
+    .nav-item>a{
+        height:50px !important;
+    }
+
+    .inLineFlex{
+        display: inline-flex !important;
+        width: 14.5px;
+        height: 32px;
+    }
+
+    .nameLong{
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 5vw !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+        margin-top: -0.2vh;
+        margin-left: -0.5vw;
+    }
+
+    .nameShort{
+        align-content: flex-start;
+        text-align: left;
+        margin-left:6%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameSiteSelection{
+        
+        flex-grow:1;
+
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        height: 3vh;
+        margin-top: 0.4vh;
+        font-size: 0.9em;
+        margin-left: 0.5vw;
+
+    }
+    .boton-acordion{
+        padding-left: 0.76vw !important;
+        padding-right: 0vw !important;
+    }
+    .interiorButton{
+        display: flex;
+        justify-content: flex-start;  
+        /* flex-flow: row nowrap; */ 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: flex-start;
+        width: 9vw;
+        height: 2.8vh;
+        .iconSiteSelection{
+            flex-grow:0;
+            width: 1.5vw;
+            height: 2vh;
+            
+        }
+    }
+
+    .text{
+        margin-top:-0.4vh;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .arrows{
+        margin-top: 0vh !important;
+        height: 1em !important;
+        width: 1em !important;
+    }
+}
+
+@include dps968  {
+    .SubMenuSideBar{
+        font-size: 0.8em;
+    }
+    
+    .expand-sidebar{
+        width:13vw;
+      }
+    
+    .siteSelectionButton{
+        height:60% !important;
+        a{
+            width: 100% !important;
+            padding:0px;
+        }
+    }
+
+    .Accordion{
+        margin-left:-10% !important;
+        svg{
+            width: 2vw !important;
+            height: 2.3vh !important;
+        }
+    }
+
+    .nav-item>a{
+        height:50px !important;
+    }
+
+    .inLineFlex{
+        display: inline-flex !important;
+        width: 14.5px;
+        height: 32px;
+    }
+
+    .nameLong{
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 5vw !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+        margin-top: -0.2vh;
+        margin-left: -0.5vw;
+    }
+
+    .nameShort{
+        align-content: flex-start;
+        text-align: left;
+        margin-left:6%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameSiteSelection{
+        
+        flex-grow:1;
+
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        height: 3vh;
+        margin-top: 0.4vh;
+        font-size: 0.9em;
+        margin-left: 0.5vw;
+
+    }
+    .boton-acordion{
+        padding-left: 0.76vw !important;
+        padding-right: 0vw !important;
+    }
+    .interiorButton{
+        display: flex;
+        justify-content: flex-start;  
+        /* flex-flow: row nowrap; */ 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: flex-start;
+        width: 9vw;
+        height: 2.8vh;
+        .iconSiteSelection{
+            flex-grow:0;
+            width: 1.5vw;
+            height: 2vh;
+            
+        }
+    }
+
+    .text{
+        margin-top:-0.4vh;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .arrows{
+        margin-top: 0vh !important;
+        height: 1em !important;
+        width: 1em !important;
+    }
+}
+
+@include dps1068  {
+    .SubMenuSideBar{
+        font-size: 0.8em;
+    }
+    
+    .expand-sidebar{
+        width:12vw;
+      }
+    
+    .siteSelectionButton{
+        height:60% !important;
+        a{
+            width: 100% !important;
+            padding:0px;
+        }
+    }
+
+    .Accordion{
+        margin-left:-10% !important;
+        svg{
+            width: 2vw !important;
+            height: 2.3vh !important;
+        }
+    }
+
+    .nav-item>a{
+        height:50px !important;
+    }
+
+    .inLineFlex{
+        display: inline-flex !important;
+        width: 14.5px;
+        height: 32px;
+    }
+
+    .nameLong{
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 4vw !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+        margin-top:-0.4vh;
+    }
+
+    .nameShort{
+        align-content: flex-start;
+        text-align: left;
+        margin-left:6%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameSiteSelection{
+        
+        flex-grow:1;
+
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        height: 3vh;
+        margin-top: 0.2vh;
+            
+    }
+
+    .interiorButton{
+        display: flex;
+        justify-content: flex-start;  
+        /* flex-flow: row nowrap; */ 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: flex-start;
+        width: 9vw;
+        .iconSiteSelection{
+            flex-grow:0;
+            width: 2vw;
+            height: 2.3vh;
+            
+        }
+    }
+
+    .text{
+        margin-top:-0.4vh;
+    }
+
+    .arrows{
+        margin-top: 0vh !important;
+        height: 1em !important;
+        width: 1em !important;
+    }
+}
+
+@include dps1168  {
+    .SubMenuSideBar{
+        font-size: 0.8em;
+    }
+    
+    .expand-sidebar{
+        width:12vw;
+      }
+    
+    .siteSelectionButton{
+        height:60% !important;
+        a{
+            width: 100% !important;
+            padding:0px;
+        }
+    }
+
+    .Accordion{
+        margin-left:-10% !important;
+        svg{
+            width: 2vw !important;
+            height: 2.3vh !important;
+        }
+    }
+
+    .nav-item>a{
+        height:50px !important;
+    }
+
+    .inLineFlex{
+        display: inline-flex !important;
+        width: 14.5px;
+        height: 32px;
+    }
+
+    .nameLong{
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 4vw !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameShort{
+        align-content: flex-start;
+        text-align: left;
+        margin-left:6%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameSiteSelection{
+        
+        flex-grow:1;
+
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        height: 3vh;
+        margin-top: 0.2vh;
+            
+    }
+
+    .interiorButton{
+        display: flex;
+        justify-content: flex-start;  
+        /* flex-flow: row nowrap; */ 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: flex-start;
+        width: 9vw;
+        .iconSiteSelection{
+            flex-grow:0;
+            width: 2vw;
+            height: 2.3vh;
+            
+        }
+    }
+}
+
+@include dps1268  {
+    .SubMenuSideBar{
+        font-size: 0.8em;
+    }
+    
+    .expand-sidebar{
+        width:12vw;
+      }
+    
+    .siteSelectionButton{
+        height:60% !important;
+        a{
+            width: 100% !important;
+            padding:0px;
+        }
+    }
+
+    .Accordion{
+        margin-left:-10% !important;
+        svg{
+            width: 2vw !important;
+            height: 2.3vh !important;
+        }
+    }
+
+    .nav-item>a{
+        height:50px !important;
+    }
+
+    .inLineFlex{
+        display: inline-flex !important;
+        width: 14.5px;
+        height: 32px;
+    }
+
+    .nameLong{
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 4vw !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameShort{
+        align-content: flex-start;
+        text-align: left;
+        margin-left:6%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameSiteSelection{
+        
+        flex-grow:1;
+
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        height: 3vh;
+        margin-top: 0.2vh;
+            
+    }
+
+    .interiorButton{
+        display: flex;
+        justify-content: flex-start;  
+        /* flex-flow: row nowrap; */ 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: flex-start;
+        width: 9vw;
+        .iconSiteSelection{
+            flex-grow:0;
+            width: 2vw;
+            height: 2.3vh;
+            
+        }
+    }
+}
+
+@include dps1368  {
+    .SubMenuSideBar{
+        font-size: 0.8em;
+    }
+    
+    .expand-sidebar{
+        width:12vw;
+      }
+    
+    .siteSelectionButton{
+        height:60% !important;
+        a{
+            width: 100% !important;
+            padding:0px;
+        }
+    }
+
+    .Accordion{
+        margin-left:-10% !important;
+        svg{
+            width: 2vw !important;
+            height: 2.3vh !important;
+        }
+    }
+
+    .nav-item>a{
+        height:50px !important;
+    }
+
+    .inLineFlex{
+        display: inline-flex !important;
+        width: 14.5px;
+        height: 32px;
+    }
+
+    .nameLong{
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameShort{
+        align-content: flex-start;
+        text-align: left;
+        margin-left:6%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameSiteSelection{
+        
+        flex-grow:1;
+
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        height: 3vh;
+        margin-top: 0.2vh;
+            
+    }
+
+    .interiorButton{
+        display: flex;
+        justify-content: flex-start;  
+        /* flex-flow: row nowrap; */ 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: flex-start;
+        width: 9.5vw;
+        .iconSiteSelection{
+            flex-grow:0;
+            width: 2vw;
+            height: 2.3vh;
+            
+        }
+    }
+}
+
+@include dps1468  {
+    .expand-sidebar{
+        width:12vw;
+      }
+    
+    .siteSelectionButton{
+        height:60% !important;
+        a{
+            width: 100% !important;
+            padding:0px;
+        }
+    }
+
+    .Accordion{
+        margin-left:-10% !important;
+    }
+
+    .nav-item>a{
+        height:50px !important;
+    }
+
+    .inLineFlex{
+        display: inline-flex !important;
+        width: 14.5px;
+        height: 32px;
+    }
+
+    .nameLong{
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameShort{
+        align-content: flex-start;
+        text-align: left;
+        margin-left:6%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameSiteSelection{
+        
+        flex-grow:1;
+
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        height: 3vh;
+        margin-top: 0.2vh;
+        font-size: 1em;
+            
+    }
+
+    .interiorButton{
+        display: flex;
+        justify-content: flex-start;  
+        /* flex-flow: row nowrap; */ 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: flex-start;
+        width: 9.5vw;
+        .iconSiteSelection{
+            flex-grow:0;
+            width: 2vw;
+            height: 2.3vh;
+            
+        }
+    }
+}
+
+@include dps1568  {
+    .expand-sidebar{
+        width:11vw;
+      }
+    
+    .siteSelectionButton{
+        height:60% !important;
+        a{
+            width: 100% !important;
+            padding:0px;
+        }
+    }
+
+    .Accordion{
+        margin-left:-10% !important;
+    }
+
+    .nav-item>a{
+        height:50px !important;
+    }
+
+    .inLineFlex{
+        display: inline-flex !important;
+        width: 14.5px;
+        height: 32px;
+    }
+
+    .nameLong{
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameShort{
+        align-content: flex-start;
+        text-align: left;
+        margin-left:6%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameSiteSelection{
+        
+        flex-grow:1;
+
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        height: 3vh;
+        margin-top: 0.2vh;
+        font-size: 1em;
+            
+    }
+
+    .interiorButton{
+        display: flex;
+        justify-content: flex-start;  
+        /* flex-flow: row nowrap; */ 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: flex-start;
+        width: 8.9vw;
+        .iconSiteSelection{
+            flex-grow:0;
+            width: 2vw;
+            height: 2.3vh;
+            
+        }
+    }
+}
+
+@include dps1668  {
+    .expand-sidebar{
+        width:11vw;
+      }
+    
+    .siteSelectionButton{
+        height:60% !important;
+        a{
+            width: 100% !important;
+            padding:0px;
+        }
+    }
+
+    .Accordion{
+        margin-left:-10% !important;
+    }
+
+    .nav-item>a{
+        height:50px !important;
+    }
+
+    .inLineFlex{
+        display: inline-flex !important;
+        width: 14.5px;
+        height: 32px;
+    }
+
+    .nameLong{
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameShort{
+        align-content: flex-start;
+        text-align: left;
+        margin-left:6%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameSiteSelection{
+        
+        flex-grow:1;
+
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        height: 3vh;
+        margin-top: 0.2vh;
+        font-size: 1em;
+            
+    }
+
+    .interiorButton{
+        display: flex;
+        justify-content: flex-start;  
+        /* flex-flow: row nowrap; */ 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: flex-start;
+        width: 8.8vw;
+        .iconSiteSelection{
+            flex-grow:0;
+            width: 2vw;
+            height: 2.3vh;
+            
+        }
+    }
+}
+
+@include dps1768  {
+    .expand-sidebar{
+        width: 10.5vw;
+      }
+    
+    .siteSelectionButton{
+        height:60% !important;
+        a{
+            width: 100% !important;
+            padding:0px;
+        }
+    }
+
+    .Accordion{
+        margin-left:-10% !important;
+    }
+
+    .nav-item>a{
+        height:50px !important;
+    }
+
+    .inLineFlex{
+        display: inline-flex !important;
+        width: 14.5px;
+        height: 32px;
+    }
+
+    .nameLong{
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameShort{
+        align-content: flex-start;
+        text-align: left;
+        margin-left:6%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameSiteSelection{
+        
+        flex-grow:1;
+
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        height: 3vh;
+        margin-top: 0.2vh;
+        font-size: 1em;
+            
+    }
+
+    .interiorButton{
+        display: flex;
+        justify-content: flex-start;  
+        /* flex-flow: row nowrap; */ 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: flex-start;
+        width: 8vw;
+        .iconSiteSelection{
+            flex-grow:0;
+            width: 2vw;
+            height: 2.3vh;
+            
+        }
+    }
+}
+
+@include dps1868  {
+    .expand-sidebar{
+        width: 10vw;
+      }
+    
+    .siteSelectionButton{
+        height:60% !important;
+        a{
+            width: 100% !important;
+            padding:0px;
+        }
+    }
+
+    .Accordion{
+        margin-left:-10% !important;
+    }
+
+    .nav-item>a{
+        height:50px !important;
+    }
+
+    .inLineFlex{
+        display: inline-flex !important;
+        width: 14.5px;
+        height: 32px;
+    }
+
+    .nameLong{
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameShort{
+        align-content: flex-start;
+        text-align: left;
+        margin-left:6%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameSiteSelection{
+        
+        flex-grow:1;
+
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        height: 3vh;
+        margin-top: 0.2vh;
+        font-size: 1em;
+            
+    }
+
+    .interiorButton{
+        display: flex;
+        justify-content: flex-start;  
+        /* flex-flow: row nowrap; */ 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: flex-start;
+        width: 7.5vw;
+        .iconSiteSelection{
+            flex-grow:0;
+            width: 2vw;
+            height: 2.3vh;
+            
+        }
+    }
+}
+
+@include dps1968  {
+    .expand-sidebar{
+        width: 9vw;
+      }
+    
+    .siteSelectionButton{
+        height:60% !important;
+        a{
+            width: 100% !important;
+            padding:0px;
+        }
+    }
+
+    .Accordion{
+        margin-left:-10% !important;
+    }
+
+    .nav-item>a{
+        height:50px !important;
+    }
+
+    .inLineFlex{
+        display: inline-flex !important;
+        width: 14.5px;
+        height: 32px;
+    }
+
+    .nameLong{
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameShort{
+        align-content: flex-start;
+        text-align: left;
+        margin-left:6%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 75px !important; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    .nameSiteSelection{
+        
+        flex-grow:1;
+
+        align-content: flex-start;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        height: 3vh;
+        margin-top: 0.2vh;
+        font-size: 1em;
+            
+    }
+
+    .interiorButton{
+        display: flex;
+        justify-content: flex-start;  
+        /* flex-flow: row nowrap; */ 
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        align-content: flex-start;
+        width: 7vw;
+        .iconSiteSelection{
+            flex-grow:0;
+            width: 2vw;
+            height: 2.3vh;
+            margin-left: -0.5vw
+        }
+    }
+
+    .siteSelectionNormal{
+        display: flex;
+
+        button{
+            border: none;
+            color: white; 
+            justify-content: center;
+            align-content: center;
+            /*svg{
+               width: 1.8vw;
+                height: 4.5vh;
+            }*/
+        }
+    }
+}

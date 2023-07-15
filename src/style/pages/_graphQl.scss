@@ -1,0 +1,11 @@
+@import "../utilities/globalClasses";
+@import "../utilities/breakPoints";
+
+
+
+.react-json-view {
+    width: 60%;
+    position: absolute !important;
+    height: 100% !important;
+    overflow: scroll;
+}
